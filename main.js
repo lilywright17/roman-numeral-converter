@@ -16,7 +16,9 @@ var numerals = {
     },
 
  roman = "";
+//loop through the dictionary
   for (let i in numerals ) {
+    //if the number given is greater than the number at position i, add the roman numeral to the empty string, and subtract the number at position i from the given number
     while ( num >= numerals[i] ) {
       roman += i;
       num -= numerals[i];
